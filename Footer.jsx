@@ -11,7 +11,9 @@ function Footer() {
   return (
     <footer>
       <div className="wrap footer-row">
-        <span className="footer-note">© {year} Raja Mustafa Arfat — Built with React &amp; Vite.</span>
+        <span className="footer-note">
+          © {year} Raja Mustafa Arfat — Built with React &amp; Vite.
+        </span>
 
         <div className="footer-socials">
           <a
@@ -31,27 +33,31 @@ function Footer() {
           Back to top ↑
         </button>
       </div>
-      <footer className="footer">
-  <div className="wrap" style={{ textAlign: 'center', padding: '2rem 0' }}>
-    <p>© {new Date().getFullYear()} Raja Mustafa Arfat. All rights reserved.</p>
-    
-    {/* FlyRank Graduate Badge */}
-    <div style={{ marginTop: '1rem' }}>
-      <a 
-        href="https://internship-badge.netlify.app/" 
-        target="_blank" 
-        rel="noreferrer"
-        style={{ display: 'inline-block' }}
-      >
-        <img 
-          src="https://internship-badge.netlify.app/badge.svg" 
-          alt="FlyRank AI Fluency Graduate Badge" 
-          style={{ height: '40px', width: 'auto' }}
-        />
-      </a>
-    </div>
-  </div>
-</footer>
+
+      {/* FlyRank Graduate Badge Section */}
+      <div className="wrap" style={{ textAlign: 'center', padding: '1.5rem 0 2rem 0' }}>
+        <a 
+          href="https://internship-badge.netlify.app/" 
+          target="_blank" 
+          rel="noreferrer"
+          style={{ 
+            display: 'inline-flex', 
+            alignItems: 'center', 
+            gap: '8px',
+            padding: '8px 16px', 
+            backgroundColor: '#1e293b', 
+            color: '#38bdf8', 
+            borderRadius: '20px',
+            fontSize: '0.85rem',
+            fontWeight: '500',
+            textDecoration: 'none',
+            border: '1px solid #334155'
+          }}
+        >
+          <span style={{ height: '8px', width: '8px', backgroundColor: '#22c55e', borderRadius: '50%' }}></span>
+          FlyRank AI Fluency Graduate
+        </a>
+      </div>
     </footer>
   )
 }
